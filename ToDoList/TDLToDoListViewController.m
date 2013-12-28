@@ -7,8 +7,11 @@
 //
 
 #import "TDLToDoListViewController.h"
+#import "TDLToDoItem.h"
 
 @interface TDLToDoListViewController ()
+
+@property NSMutableArray *toDoItems;
 
 @end
 
@@ -23,9 +26,26 @@
     return self;
 }
 
+- (void)loadInitialData
+{
+    TDLToDoItem *item1 = [[TDLToDoItem alloc] init];
+    item1.itemName = @"Buy milk";
+    [self.toDoItems addObject:item1];
+
+    TDLToDoItem *item2 = [[TDLToDoItem alloc] init];
+    item2.itemName = @"Buy eggs";
+    [self.toDoItems addObject:item2];
+
+    TDLToDoItem *item3 = [[TDLToDoItem alloc] init];
+    item3.itemName = @"Read a book";
+    [self.toDoItems addObject:item3];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.toDoItems = [[NSMutableArray alloc] init];
+    [self loadInitialData];
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
