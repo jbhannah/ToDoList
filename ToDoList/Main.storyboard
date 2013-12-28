@@ -262,14 +262,18 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="My To-Do List" id="rcI-55-9yd">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="HrZ-nm-xED"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="HrZ-nm-xED">
+                            <connections>
+                                <segue destination="lFQ-fm-jAm" kind="modal" id="xHm-OQ-l41"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6mb-IF-DgP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="315" y="264"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller - Add To-Do Item-->
         <scene sceneID="SyQ-q9-wtZ">
             <objects>
                 <viewController id="mdm-oP-fSs" sceneMemberID="viewController">
@@ -291,14 +295,18 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="P2l-hT-WYH" secondAttribute="trailing" constant="20" id="JDA-F1-8MI"/>
-                            <constraint firstItem="P2l-hT-WYH" firstAttribute="top" secondItem="wYM-s4-59j" secondAttribute="bottom" constant="135" id="byq-AT-WTY"/>
+                            <constraint firstItem="P2l-hT-WYH" firstAttribute="top" secondItem="wYM-s4-59j" secondAttribute="bottom" constant="91" id="byq-AT-WTY"/>
                             <constraint firstItem="P2l-hT-WYH" firstAttribute="leading" secondItem="LEb-m4-vol" secondAttribute="leading" constant="20" id="iYz-Ou-jok"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Add To-Do Item" id="uhd-5v-SZW">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="JfE-4t-z6c"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="sra-DB-MWE"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wsS-4c-T41" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="762" y="264"/>
+            <point key="canvasLocation" x="1288" y="264"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Y3b-CT-cDL">
@@ -317,6 +325,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rkh-5A-kl2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-211" y="264"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6G9-NK-fj3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lFQ-fm-jAm" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="iwq-Tf-n8z">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="mdm-oP-fSs" kind="relationship" relationship="rootViewController" id="BIj-IU-cEh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4w4-AZ-Roq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="762" y="264"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
