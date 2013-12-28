@@ -308,6 +308,10 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="doneButton" destination="sra-DB-MWE" id="C5O-13-oxu"/>
+                        <outlet property="textField" destination="P2l-hT-WYH" id="vos-4Y-qYp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wsS-4c-T41" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="6Zp-Mo-E31" userLabel="Exit" sceneMemberID="exit"/>
