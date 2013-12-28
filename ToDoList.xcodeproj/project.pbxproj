@@ -19,6 +19,7 @@
 		C75D73DA186F4C4B008DC217 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C75D73C2186F4C4B008DC217 /* UIKit.framework */; };
 		C75D73E2186F4C4B008DC217 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C75D73E0186F4C4B008DC217 /* InfoPlist.strings */; };
 		C75D73E4186F4C4B008DC217 /* ToDoListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C75D73E3186F4C4B008DC217 /* ToDoListTests.m */; };
+		C75D73EE186F4F84008DC217 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C75D73ED186F4F84008DC217 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		C75D73DF186F4C4B008DC217 /* ToDoListTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ToDoListTests-Info.plist"; sourceTree = "<group>"; };
 		C75D73E1186F4C4B008DC217 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C75D73E3186F4C4B008DC217 /* ToDoListTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToDoListTests.m; sourceTree = "<group>"; };
+		C75D73ED186F4F84008DC217 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				C75D73CD186F4C4B008DC217 /* TDLAppDelegate.h */,
+				C75D73ED186F4F84008DC217 /* Main.storyboard */,
 				C75D73CE186F4C4B008DC217 /* TDLAppDelegate.m */,
 				C75D73D0186F4C4B008DC217 /* Images.xcassets */,
 				C75D73C5186F4C4B008DC217 /* Supporting Files */,
@@ -220,6 +223,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C75D73EE186F4F84008DC217 /* Main.storyboard in Resources */,
 				C75D73C9186F4C4B008DC217 /* InfoPlist.strings in Resources */,
 				C75D73D1186F4C4B008DC217 /* Images.xcassets in Resources */,
 			);
